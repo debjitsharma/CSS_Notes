@@ -1,0 +1,2 @@
+1) You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+2) Set the image to have a width of 100% so it fills the div.

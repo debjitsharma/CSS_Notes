@@ -1,0 +1,57 @@
+1) Element Selectors- It selects a particular HTML tag.
+   
+   h1{
+    color: blue
+   }
+
+2) Class Selector-  It's used for grouping elements in your HTML file to apply the same CSS rule to all of them.
+                    It allows you to group different parts of your HTML file into having the same styling.
+                    And this can be really, really useful on multi-page websites with lots of different elements,
+                    and you don't just want to select a particular type of HTML element.
+   //styles.css
+   .red-heading{
+    color:red
+   }
+
+   //index.html
+   <h2 class="red-heading">Red</h2>
+   <h2>Green<h2>
+   <p class="red-heading">Blue</p>
+
+3) Id Selector- this selects all elements with a particular ID attribute.
+
+   //index.html
+   <h2 id="main">Red</h2>
+   <h2>Green</h2>
+   <h2>Blue</h2>
+
+   //styles.css
+
+   #main{
+    color:red;
+   }
+   
+    The class selector can be applied to many elements, whereas the ID should be only applied to
+    one element in a single HTML file
+
+4) Attribute Selector- We can select these elements that have particular attributes or particular attributes values by
+                       using this notation.
+   
+   //index.html
+   <p draggable="true">Red</p>
+   <p draggable="false">Green</p>
+   <p draggable="false">Blue</p>
+
+   
+   //styles.css
+
+   p[draggable="false"]{
+    color:red;
+   }
+
+5) Universal Selector-  When you apply this, it doesn't matter what class you've got, what ID, what attribute set, which different elements,
+                        if you select all, it's going to apply the style to everything where the stylesheet is active.  
+
+    *{
+        color:red;
+    }                    

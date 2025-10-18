@@ -1,0 +1,38 @@
+Types of CSS:-
+1) Inline- It goes into the same line as a particular HTML element.
+  
+   <html style="background: blue">    //Property: value
+   </html>
+
+    It's not normally recommended to use inline styles in your entire document.
+    It's only for specific sections, or when you're testing, or when you only want it in one single element
+    or one line in your HTML document.
+
+2)  Internal- Internal styles are really useful for applying it only to one HTML document.
+    
+    <html>
+    <head>
+    <style>
+    html{
+        background: red;
+    }
+    </style>
+    </head>
+    </html>
+    }
+
+ 3) External- This style of external CSS is what's used most commonly in web development.
+
+    //index.html
+    <html>
+    <head>
+    <link
+     rel="stylesheet"   // relationship- refers to what is the role of this thing that we're linking to.
+     href="./styles.css" // location
+     />   
+     </head>
+
+     //styles.css
+     html{
+        background:green;
+     }    
